@@ -22,20 +22,18 @@ Para utilizar MongoDB Atlas como base de datos, debes seguir estos pasos:
 1. Clona este repositorio en tu máquina local:
 
    bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
-   cd tu-repositorio
+   git clone https://github.com/LuisFS06/NOSQL-Analytics.git
    
 
 2. Ejecuta los siguientes comandos para configurar las conexiones y agregar datos simulados a Redis y MongoDB:
 
    bash
    # Para Redis
-   python redis_connection.py
-   python insert_simulated_data_to_redis.py
+   python insertar_redis.py
+   python extrae_redis.py
 
    # Para MongoDB
-   python mongodb_connection.py
-   python insert_simulated_instagram_posts.py
+   python insertar_mongo.py
    
 
 ## Notas adicionales
@@ -46,7 +44,4 @@ Para utilizar MongoDB Atlas como base de datos, debes seguir estos pasos:
 
 ¡Disfruta explorando las conexiones a Redis y MongoDB en Python y la inserción de datos simulados de Instagram!
 
-Si tienes alguna pregunta o problema, no dudes en [crear un issue](https://github.com/tu-usuario/tu-repositorio/issues) en este repositorio para que podamos ayudarte.
 
-
-Asegúrate de reemplazar "tu-usuario" y "tu-repositorio" con tu nombre de usuario y nombre de repositorio en GitHub. También, personaliza cualquier otra información necesaria en el README.
