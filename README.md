@@ -6,7 +6,7 @@ Este repositorio contiene scripts en Python para establecer conexiones tanto a R
 
 Antes de comenzar, asegúrate de tener instalados los siguientes componentes:
 
-- [Redis](https://redis.io/download) - Un servidor de almacenamiento en memoria
+- [Redis (Windows)](https://github.com/microsoftarchive/redis/releases) - Descarga Redis para Windows desde el repositorio oficial.
 - [MongoDB Compass](https://www.mongodb.com/try/download/compass) - Una interfaz gráfica para MongoDB
 
 ## Configuración de MongoDB Atlas
@@ -23,18 +23,19 @@ Para utilizar MongoDB Atlas como base de datos, debes seguir estos pasos:
 
    bash
    git clone https://github.com/LuisFS06/NOSQL-Analytics.git
-   
+   cd tu-repositorio
 
 2. Ejecuta los siguientes comandos para configurar las conexiones y agregar datos simulados a Redis y MongoDB:
 
    bash
    # Para Redis
+   redis-cli  # Abre una terminal de Redis
    python insertar_redis.py
    python extrae_redis.py
 
    # Para MongoDB
    python insertar_mongo.py
-   
+   Asegúrate de configurar la conexión en MongoDB Compass antes de ejecutar el script de conexión a MongoDB.
 
 ## Notas adicionales
 
