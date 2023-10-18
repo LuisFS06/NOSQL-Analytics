@@ -37,3 +37,4 @@ for i in range(4000):
     collection.insert_one(post_metrics)
 
 print("Métricas de publicación han sido insertadas en MongoDB.")
+
